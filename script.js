@@ -128,3 +128,18 @@ document.getElementById("reveal-button").addEventListener("click", function () {
     console.warn("Código incorrecto. Acceso denegado.");
   }
 });
+
+//gatito
+function cambiarGatito() {
+  // Obtiene la imagen principal
+  const imagenGatito = document.getElementById("gatito");
+  const imagenExtra = document.getElementById("gatitoExtra");
+
+  // Cambia la imagen al hacer clic
+  if (imagenGatito.src.includes("sanjinormal.png")) {
+    imagenGatito.src = "img/bento/sanjiowau.png"; // Cambia a la segunda imagen
+  } else {
+    imagenGatito.src = "img/bento/sanjinormal.png"; // Vuelve a la primera imagen
+    imagenExtra.hidden = true; // Oculta la imagen extra (opcional)
+  }
+}
