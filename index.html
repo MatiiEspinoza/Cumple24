@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumpleaños 2024</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--ESTILOS-->
+  <link rel="stylesheet" href="css/estilos-home.css">
+  <link rel="stylesheet" href="styles.css"> <!--estilos sobre-->
+  <!--FUENTES-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Rubik+Scribble&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Rubik+Scribble&display=swap');
+  </style>
+  <link rel="icon" href="img/icon.png">
+</head>
+
+<body class="gradient-bg">
+  <h1>Un pequeño repaso de estos seis años <br>(2018-2024)</h1>
+
+  <div style="display: flex; justify-content: center;" class="row g-0 mt-4 mb-4 scale-up-center">
+    <video class="col-12 col-md-5 bloque1 bento" controls src="vid/TÚ VIDEO OFICIAL.mp4"></video>
+    <div class="col-12 col-md-5 bloque2 bento">
+      <h2 class="titulo-bloque">Tú</h2>
+      <p style="font-size: 22px;">En este viaje hice que el Benja me grabe todo el tiempo, sin decirle que era para
+        grabar una canción para ti, dije que era un video de recuerdos del viaje (tuve que grabarlo a él de vez en
+        cuando tocando House of gold). Fun fact: No se si te conté alguna vez, pero para esta canción tuve que ir a la
+        casa del Joao a grabar y ese mismo día improvisé el bajo y la noche anterior cree la batería en un programa
+        super arcaico.</p>
+    </div>
+    <img class="col-12 col-md-6 bloque3 bento" src="img/bento/mimir.jpg" alt="">
+    <div class="col-12 col-md-4 bloque4 bento">Primera<br>salida en<br>familia <i class="fa-solid fa-car-side"></i>
+    </div>
+    <div class="col-12 col-md-4 bloque5 bento">
+      <h2 class="titulo-bloque">End Game <i class="fa-solid fa-film"></i></h2>
+      <p style="font-size: 25px;">La primera película que vimos juntos y que formó una tradición de ver las pelis de
+        Marvel. Lindos tiempos
+        cuando cada cosa nueva de ellos era motivo de emocionarse.
+        <br>P. D: Tabamos chiquitos. 😁
+      </p>
+    </div>
+    <img class="col-12 col-md-6 bento bloque6" src="img/bento/theendgame.jpg" alt="">
+    <video class="col-12 col-md-5 bloque1 bento" controls src="vid/Vid 25.06.21.mp4"></video>
+    <div class="col-12 col-md-5 bloque2 bento">
+      <h2 class="titulo-bloque">Life is beautiful <i class="fa-solid fa-heart"></i></h2>
+      <p style="font-size: 20px;">El video que "copié" o más bien fue inspirado por el de Sebastian Stan.<br>Recuerdo
+        que quería darte algun
+        gesto de amor y el video calzó justo con eso. Perdón
+        por lo poco original, intenté darle mi toque.</p>
+      <br>
+      <h6 style="color: #3185af;">rompecabezas.html</h6>
+    </div>
+  </div>
+
+  <br>
+  <h2 style="text-align: center; font-family: Newsreader; font-size: 60px;">¡¡¡Clic en este gato para una sorpresa de
+    sanwis !!!</h2>
+  <div style="display: flex; justify-content: center;">
+    <!-- Imagen interactiva -->
+    <img id="gatito" style="height: 700px; cursor: pointer;" src="img/bento/sanjinormal.png" alt="Sanji normal"
+      onclick="cambiarGatito()">
+    <!-- Imagen fija -->
+    <img style="height: 500px;" src="img/bento/sanjiowau.png" alt="Sanji owau" id="gatitoExtra" hidden>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="text-align: center;" class="mt-4 mb-4">
+    <h2>Mentira...</h2>
+    <button id="btnConfetti" class="btn btn-primary" style="font-size: 1.5rem; padding: 10px 20px;">
+      🎉 Presiona aquí 🎉
+    </button>
+  </div>
+
+  <h2 style="text-align: center; font-family: Newsreader; font-size: 60px;">Gracias por tanto amor y tantos palilos <i
+      class="fa-solid fa-cat"></i></h2>
+  <h2 style="text-align: center; font-family: Newsreader; font-size: 40px;">Aca va un pequeño compilado de ellos:</h2>
+
+  <div class="container">
+    <div id="carouselExampleIndicatorsGatos" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="9"
+          aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicatorsGatos" data-bs-slide-to="10"
+          aria-label="Slide 11"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner/gatos0.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos1.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos3.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos4.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos5.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos6.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos7.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos8.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos9.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner/gatos10.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsGatos"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsGatos"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <iframe src="https://open.spotify.com/embed/playlist/7qCorPCh6RZ7R8zdS2ydIW?si=7a4feb4656764384" width="1300"
+      height="600" frameborder="0" allowtransparency="true" allow="encrypted-media">
+    </iframe>
+
+    <div class="text-center">
+      <h2>Puedes añadir esa playlist, para que escuches un poco de la música que me recuerda a ti de alguna u otra
+        forma. Te amo muchísimo ma babe ❤️</h2>
+    </div>
+  </div>
+
+  <br>
+
+  <h2 style="text-align: center; font-family: Newsreader; font-size: 60px;">Prepárate <text
+      style="font-weight: bold; color: #7dd0ff;">un</text> regalo especial te
+    está esperando</h2>
+  <div class="container">
+    <button id="reveal-button" class="btn-cortar w-100 reveal-button">ABRIR REGALO</button>
+    <p style="text-align: center;" id="message">Pon la contraseña para acceder a este apartado</p>
+  </div>
+
+  <div id="hidden-content">
+    <h2 style="text-align: center; font-family: Newsreader; font-size: 60px;">¡Elige entre uno de los sobres sorpresa
+      desbloqueados!</h2>
+    <h5 style="text-align: center; font-family: Newsreader;">
+      Has ingresado el código correcto. Felicitaciones.
+    </h5>
+    <br>
+    <br>
+    <!--CAROUSEL SOBRES-->
+    <div class="container">
+      <div id="sobre" class="container d-flex justify-content-around mt-4 mb-4">
+        <div class="image-container" onclick="playAnimation(1)">
+          <img src="images/sobre.webp" alt="Sobre 1" id="animationImage1">
+        </div>
+        <div class="image-container" onclick="playAnimation(2)">
+          <img src="images/sobre.webp" alt="Sobre 2" id="animationImage2">
+        </div>
+        <div class="image-container" onclick="playAnimation(3)">
+          <img src="images/sobre.webp" alt="Sobre 3" id="animationImage3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <img style="width: 50%;" src="images/gacha.webp" alt="">
+  </div>
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+
+  <!-- confeti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

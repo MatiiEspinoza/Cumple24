@@ -1,0 +1,92 @@
+body {
+  background-color: #0D2533;
+  color: whitesmoke;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+  /* Zoom al pasar el mouse */
+}
+
+/* Animación de Zoom */
+.zoom {
+  transform: scale(1.2);
+}
+
+/* Animación de Giro Horizontal */
+.flip {
+  animation: flipHorizontal 1s forwards;
+}
+
+@keyframes flipHorizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Animación de Destellos */
+.flash {
+  animation: flashEffect 1s ease-in-out infinite;
+}
+
+@keyframes flashEffect {
+
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(2.5);
+  }
+}
+
+/* CONFETI */
+#btnConfetti {
+  background-color: #4380a3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btnConfetti:hover {
+  background-color: #7dd0ff;
+  transform: scale(1.1);
+}
+
+#btnConfetti:active {
+  transform: scale(1.05);
+  background-color: #4380a3;
+}
+
+/*fuente feliz cumple*/
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Contenido oculto*/
+#hidden-content {
+  display: none; /* Por defecto, ocultamos el contenido */
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #0D2533;
+}
+#message {
+  color: white;
+  font-weight: bold;
+}
