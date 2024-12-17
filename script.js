@@ -13,34 +13,24 @@ let animationInterval = {}; // Intervalos para cada sobre
 let envelopeChosen = false; // Verifica si ya se eligió un sobre
 
 function playAnimation(envelopeId) {
-  // Si ya se eligió un sobre, no permitir interacción
+  console.log("Iniciando animación para sobre ID:", envelopeId); // Log de depuración
   if (envelopeChosen) return;
 
   const imageElement = document.getElementById(`animationImage${envelopeId}`);
-
-  // Si ya se está animando este sobre, no hacer nada
   if (animationInterval[envelopeId]) return;
 
-  // Marcar que se ha elegido un sobre
   envelopeChosen = true;
-
-  // Deshabilitar la interacción en los demás sobres
   disableOtherEnvelopes(envelopeId);
 
-  currentFrame[envelopeId] = 0; // Reinicia el frame actual
+  currentFrame[envelopeId] = 0;
 
-  // Ejecuta la animación frame por frame
   animationInterval[envelopeId] = setInterval(() => {
     currentFrame[envelopeId]++;
-
     if (currentFrame[envelopeId] >= envelopeFrames[envelopeId].length) {
-      clearInterval(animationInterval[envelopeId]); // Detén la animación
-      animationInterval[envelopeId] = null; // Libera el intervalo
+      clearInterval(animationInterval[envelopeId]);
+      animationInterval[envelopeId] = null;
 
-      // Aplica el efecto de brillo después de la animación
       imageElement.classList.add("flash");
-
-      // Elimina el efecto de brillo después de 3 segundos
       setTimeout(() => {
         imageElement.classList.remove("flash");
       }, 2000);
@@ -48,10 +38,10 @@ function playAnimation(envelopeId) {
       return;
     }
 
-    // Cambia la imagen del sobre correspondiente
     imageElement.src = envelopeFrames[envelopeId][currentFrame[envelopeId]];
-  }, 60); // Ajusta el tiempo para un efecto fluido
+  }, 60);
 }
+
 
 function disableOtherEnvelopes(selectedId) {
   // Obtén todos los sobres
